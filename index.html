@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vue.js Intro</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
   <h1>Hello word</h1>
-  <div id="myApp"></div>
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <div id="myApp">
+    <h1>Hola Mundo</h1>
+    <p>{{`se puede poner cualquier expresion de js pero debe ir dentro de dobles corchetes`}} </p>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>
