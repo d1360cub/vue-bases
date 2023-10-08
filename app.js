@@ -5,8 +5,19 @@ const app = Vue.createApp({
   `,*/
   data() {
     return {
-      message: ' mensaje desde app.js',
+      title: 'Hola Mundo',
+      message: ' mensaje sin hacer click en el boton',
     };
+  },
+  methods: {
+    changeQuote(event) {
+      console.log(event);
+      this.message = 'mensaje cambiado al hacer click en el boton';
+      this.capitalize();
+    },
+    capitalize() {
+      this.title = this.title.toUpperCase();
+    },
   },
 });
 
