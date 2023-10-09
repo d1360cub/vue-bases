@@ -33,7 +33,13 @@ const app = Vue.createApp({
     return {
       title: 'Batman Quotes',
       quotes,
+      newQuote: 'Insert new quote',
     };
+  },
+  methods: {
+    addQuote() {
+      this.quotes.unshift({ quote: this.newQuote });
+    },
   },
 });
 
